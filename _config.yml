@@ -56,7 +56,7 @@ exclude: [vendor]
 safe: false
 lsi: false
 username: WebDevFromScratch
-# repo: jasper
+repo: WebDevFromScratch.github.io
 branch: master
 relative_source: ../jasper/
 destination: ../jasper-pages/
