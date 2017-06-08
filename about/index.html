@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>I am Piotr</title>
+    <title>About</title>
     <meta name="description" content="I am Piotr - ...and I write. About coding, mostly." />
 
     <meta name="HandheldFriendly" content="True" />
@@ -60,7 +60,7 @@
 
 
 </head>
-<body class="home-template nav-closed">
+<body class="page-template nav-closed">
 
     <div class="nav">
     <h3 class="nav-title">Menu</h3>
@@ -68,8 +68,8 @@
         <span class="hidden">Close</span>
     </a>
     <ul>
-        <li class="nav-home  nav-current" role="presentation"><a href="/">Home</a></li>
-        <li class="nav-about " role="presentation"><a href="/about">About</a></li>
+        <li class="nav-home " role="presentation"><a href="/">Home</a></li>
+        <li class="nav-about  nav-current" role="presentation"><a href="/about">About</a></li>
         <li class="nav-author " role="presentation"><a href="/author/piotr">Posts by Piotr</a></li>
         <!-- <li class="nav-speeches " role="presentation"><a href="/tag/speeches">Speeches</a></li> -->
     </ul>
@@ -82,107 +82,47 @@
 
         <!-- [[! Everything else gets inserted here ]] -->
         <!-- < default -->
-<!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
-<!-- The big featured header  -->
-<header class="main-header "
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/images/cover.jpg) ">
-    <nav class="main-nav overlay clearfix">
-        <a class="blog-logo" href="/"><img src="/assets/images/iamp.png" alt="Blog Logo" /></a>
+<!-- This is a page template. A page outputs content just like any other post, and has all the same -->
+    <!-- attributes by default, but you can also customise it to behave differently if you prefer.  -->
+
+<!-- Everything inside the #post tags pulls data from the page -->
+<!-- #post -->
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="blog-logo" href="/"><img src="/assets/images/iamp_alt.png" alt="Blog Logo" /></a>
         
             <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+            
         
     </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">I am Piotr</h1>
-            <h2 class="page-description">...and I write. About coding, mostly.</h2>
-        </div>
-    </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
-<!-- The main content area on the homepage -->
-<main id="content" class="content" role="main">
-
-    <!-- The tag below includes the post loop - partials/loop.hbs -->
-        <!-- Previous/next page links - only displayed on page 2+ -->
-    <div class="extra-pagination inner">
-        
-            <nav class="pagination" role="pagination">
-    
-    <span class="page-number"> Page 1 of 1 </span>
-     
-</nav>
-        
-    </div>
-
-    <!-- This is the post loop - each post will be output using this markup -->
-    
+<main class="content" role="main">
     <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/a-full-and-comprehensive-style-test">A Full and Comprehensive Style Test</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>This is just an ipsis verbis copy of the first example running on the Ghost Demo. This shows how you can use html styling to achieve... <a class="read-more" href="/a-full-and-comprehensive-style-test">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/eye.jpg" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/piotr'>Piotr Klosinski</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/test'>Test</a>,
-                       
-                
-                    
-                       <a href='/tag/content'>Content</a>
-                       
-                
-            
-            <time class="post-date" datetime="2014-09-27">27 Sep 2014</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/gettysburg-address">Gettysburg Address</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men... <a class="read-more" href="/gettysburg-address">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/eye.jpg" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/piotr'>Piotr Klosinski</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/fiction'>Fiction</a>
-                       
-                
-            
-            <time class="post-date" datetime="1863-11-19">19 Nov 1863</time>
-        </footer>
-    </article>
-    
+        <!-- Everything inside the #post tags pulls data from the post -->
 
-    <!-- Previous/next page links - displayed on every page -->
-    
-        <nav class="pagination" role="pagination">
-    
-    <span class="page-number"> Page 1 of 1 </span>
-     
-</nav>
-    
+        <header class="post-header">
+            <h1 class="post-title">About</h1>
+        </header>
 
+        <section class="post-content">
+            <p>Hi, I am Piotr (I guess you know it by now)!</p>
+
+<p>I am a self-taught software developer, based in Cracow, Poland. Deeply in love with Ruby
+and curious about Elixir and Elm.</p>
+
+<p>If you want to know more about my experience, check out my <a href="https://www.linkedin.com/in/piotr-klosinski-34a047b9/">LinkedIn profile</a>. If you want to actually
+see some code, take a look at <a href="https://github.com/WebDevFromScratch">my Github</a>. And if
+you just want to chat, simply send me an email to […].</p>
+
+        </section>
+
+    </article>
 
 </main>
+<!-- /post -->
 
 
         <footer class="site-footer clearfix">
