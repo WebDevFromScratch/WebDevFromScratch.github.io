@@ -3,12 +3,15 @@ layout: page
 title: About
 class: 'post'
 navigation: True
-logo: 'assets/images/ghost.png'
+logo: 'assets/images/iamp_alt.png'
 current: about
 ---
 
-This is a demo blog for Ghost, it contains dummy content which allows you to click around and see what a Ghost blog running the default theme looks like.
+Hi, I am Piotr (I guess you know it by now)!
 
-We use this for testing and for reference!
+I am a self-taught software developer, based in Cracow, Poland. Deeply in love with Ruby
+and curious about Elixir and Elm.
 
-If you'd like to set up your own blog, head on over to [https://ghost.org](https://ghost.org) and sign up.
+If you want to know more about my experience, check out my [LinkedIn profile](https://www.linkedin.com/in/piotr-klosinski-34a047b9/). If you want to actually
+see some code, take a look at [my Github](https://github.com/WebDevFromScratch). And if
+you just want to chat, simply send me an email to [...].

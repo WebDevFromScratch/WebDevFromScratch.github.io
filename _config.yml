@@ -7,23 +7,22 @@ paginate: 5
 language: 'en-uk'
 
 # Website info
-name: 'Finding The Way Home'
-description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
+name: 'I am Piotr'
+description: '...and I write. About coding, mostly.'
 
 # Author's info
-author: 'Casper McFadden'
+author: 'Piotr Klosinski'
 # edit 'categories' in the front matter of every post to match this username
-nickname: casper
-bio: 'A paranormal expert and his daughter bunk in an abandoned house populated by 3 mischievous ghosts and one friendly one.'
-location: 'Maine, USA'
-url: 'http://biomadeira.github.io/jasper/'
-image: 'assets/images/casper.png'
+nickname: piotr
+bio: 'A mediocre software developer by day, a super villain by night.'
+location: 'Krakow, Poland'
+url: 'http://google.com' # TODO: edit this URL, after the whole set up is done
+image: 'assets/images/eye.jpg' # TODO: edit this image (grab a real one, or add some cool avatar)
 
-short_url: 'biomadeira.github.io/jasper/'
-google_analytics: UA-69281367-1
-disqus: username
-# edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /jasper/
+short_url: 'google.com' # TODO: edit this URL, after the whole set up is done
+# google_analytics: UA-69281367-1 TODO: set it up
+disqus: username # TODO: set it up
+baseurl: /
 
 # Permalinks
 permalink: /:title
