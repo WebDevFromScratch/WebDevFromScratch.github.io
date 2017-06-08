@@ -57,7 +57,7 @@ safe: false
 lsi: false
 username: WebDevFromScratch
 repo: WebDevFromScratch.github.io
-branch: master
+branch: main
 relative_source: ../jasper/
 destination: ../jasper-pages/
 production_url:  https://biomadeira.github.io/jasper/
