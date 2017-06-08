@@ -55,7 +55,7 @@ exclude: [vendor]
 # or "master" otherwise
 safe: false
 lsi: false
-username: biomadeira
+username: WebDevFromScratch
 repo: jasper
 branch: master
 relative_source: ../jasper/
