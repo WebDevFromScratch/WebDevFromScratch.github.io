@@ -5,7 +5,7 @@ class: 'post'
 navigation: True
 logo: 'assets/images/iamp_alt.png'
 current: about
-image: 'assets/images/cover.jpg'
+image: '/assets/images/cover.jpg'
 ---
 
 Hi, I am Piotr (I guess you know it by now)!
