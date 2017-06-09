@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>I am Piotr - Articles</title>
-    <description>...and I write. About coding, mostly.</description>
+    <description>A blog on programming - Ruby, Rails, Elixir, Phoenix, Elm and what have you.</description>
     <link>
     http://iampiotr.com</link>
     

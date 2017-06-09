@@ -6,7 +6,7 @@
       <title>iampiotr.com</title>
    
    <link>http://iampiotr.com</link>
-   <description>...and I write. About coding, mostly.</description>
+   <description>A blog on programming - Ruby, Rails, Elixir, Phoenix, Elm and what have you.</description>
    <language>en-uk</language>
    <managingEditor> Piotr Klosinski</managingEditor>
    <atom:link href="rss" rel="self" type="application/rss+xml" />
