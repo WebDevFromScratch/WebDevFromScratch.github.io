@@ -8,7 +8,7 @@ language: 'en-uk'
 
 # Website info
 name: 'I am Piotr'
-description: '...and I write. About coding, mostly.'
+description: 'A blog on programming - Ruby, Rails, Elixir, Phoenix, Elm and what have you.'
 
 # Author's info
 author: 'Piotr Klosinski'
@@ -22,7 +22,7 @@ image: 'assets/images/eye.jpg' # TODO: edit this image (grab a real one, or add 
 short_url: 'iampiotr.com'
 # google_analytics: UA-69281367-1 TODO: set it up
 disqus: username # TODO: set it up
-baseurl: /
+baseurl_redirect: /
 
 # Permalinks
 permalink: /:title
@@ -31,7 +31,9 @@ permalink: /:title
 
 
 # gems and other configs
-gems: [jekyll-paginate]
+gems:
+  - jekyll-paginate
+  - jekyll-seo-tag
 exclude: [vendor]
 
 # Additional settings available on the front-matter
@@ -41,6 +43,7 @@ exclude: [vendor]
 # Post's page cover as a per-post basis _posts/...
 # Disqus comments as a per-post basis
 # ...
+logo: '/assets/images/iamp.png'
 
 
 # Settings for builing master branch with travis-ci
