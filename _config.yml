@@ -20,8 +20,8 @@ url: 'http://iampiotr.com'
 image: 'assets/images/eye.jpg' # TODO: edit this image (grab a real one, or add some cool avatar)
 
 short_url: 'iampiotr.com'
-# google_analytics: UA-69281367-1 TODO: set it up
-disqus: username # TODO: set it up
+google_analytics: UA-100767817-1
+disqus: i-am-piotr
 baseurl_redirect: /
 
 # Permalinks
