@@ -8,6 +8,24 @@
     
       
       <item>
+        <title>Quick Guide: A Pretty Blog for a Rubyist with Jekyll and Jasper in No Time</title>
+        
+          <description>&lt;p&gt;I know, I know. Ruby is not a hyped language anymore, as it used to be only a few years ago.
+On the other hand, it’s ecosystem has matured and there are a lot of gems around that help make
+things easier, whereas with your modern-hyped-language-of-choice it might be a totally different story.
+And most importantly, Ruby is still undeniably beautiful and loved by many (including myself).&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 06 Jul 2017 13:00:00 +0000</pubDate>
+        <link>
+        http://iampiotr.com/quick-guide-pretty-blog-for-rubyist-with-jekyll-and-jasper-in-no-time</link>
+        <guid isPermaLink="true">http://iampiotr.com/quick-guide-pretty-blog-for-rubyist-with-jekyll-and-jasper-in-no-time</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>A Full and Comprehensive Style Test</title>
         
           <description>&lt;p&gt;This is just an &lt;em&gt;ipsis verbis&lt;/em&gt; copy of the first example running on the &lt;a href=&quot;http://demo.ghost.io&quot;&gt;Ghost Demo&lt;/a&gt;. This shows how you can use html styling to achieve your hopes.&lt;/p&gt;

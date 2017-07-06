@@ -12,6 +12,222 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Quick Guide: A Pretty Blog for a Rubyist with Jekyll and Jasper in No Time</title>
+	  <link>//quick-guide-pretty-blog-for-rubyist-with-jekyll-and-jasper-in-no-time</link>
+	  <author>Piotr Klosinski</author>
+	  <pubDate>2017-07-06T13:00:00+00:00</pubDate>
+	  <guid>//quick-guide-pretty-blog-for-rubyist-with-jekyll-and-jasper-in-no-time</guid>
+	  <description><![CDATA[
+	     <p>I know, I know. Ruby is not a hyped language anymore, as it used to be only a few years ago.
+On the other hand, it’s ecosystem has matured and there are a lot of gems around that help make
+things easier, whereas with your modern-hyped-language-of-choice it might be a totally different story.
+And most importantly, Ruby is still undeniably beautiful and loved by many (including myself).</p>
+
+<p>So let’s say you are a little like me: a Ruby lover who wants to start a blog. What’s the first
+thing that comes to your mind?</p>
+
+<blockquote>
+  <p>Huh, can I maybe have this blog set up as a Ruby app, too?
+And possibly, could it look quite pretty, like maybe this one I’m reading right now?</p>
+</blockquote>
+
+<p>Luckily for you, it is possible and not at all hard. Let’s get to it right away.</p>
+
+<h3 id="jekyll">Jekyll</h3>
+
+<p>First of all, of course you could write your
+<a href="https://www.youtube.com/watch?v=Gzj723LkRJY&amp;feature=youtu.be">blog as a Rails app from scratch in 15 minutes</a>
+(a classic!) but unless you’re a beginner Rubyist, in which case this migth be
+a good exercise, you likely don’t want to spend time writing another CRUD with Rails
+for this purpose. And of course, if you had decided to go that route, you’d still need
+to spend quite some time styling your blog, etc. etc.. That’s not what we are going to
+do today. This is where <a href="https://jekyllrb.com/">Jekyll</a> comes in.</p>
+
+<p>So what is Jekyll? As it’s described on it’s official website:</p>
+
+<blockquote>
+  <p>Jekyll is a simple, blog-aware, static site generator. It takes a template directory
+containing raw text files in various formats, runs it through a converter (like
+<a href="https://daringfireball.net/projects/markdown/">Markdown</a>) […] and spits out a complete,
+ready-to-publish static website suitable for serving with your favorite web server.</p>
+</blockquote>
+
+<p>Doesn’t it sound nice? And there is even more to that, like easy deploying to
+<a href="https://pages.github.com/">GitHub Pages</a>, but we will get to that later. Setting
+up Jekyll is dead simple, head over to <a href="https://jekyllrb.com/">their homepage</a>
+to see how to get it up and running. I advise you to play around with it for a bit,
+if you haven’t had a chance to do that before, as well as read through their docs,
+to further understand how it works in detail.</p>
+
+<p>Again, we won’t be going through the barebones Jekyll setup, we are going to take
+advantage of it’s community and the fact that there are a lot of great themes we
+can use without much hassle. After all, we want our new little blog to look pretty
+from the start, don’t we?</p>
+
+<h3 id="jasper">Jasper</h3>
+
+<p><a href="https://github.com/biomadeira/jasper">Jasper</a> is a simple and pretty looking theme,
+which in fact is a clone of a Casper theme from the <a href="https://ghost.org/">Ghost</a>
+publishing platform. It’s a matter of taste, in the end, so if you don’t like it,
+you can skip the Jasper setup part and skip to the next one (plus, of course, set up
+you themed or unthemed Jekyll blog in the meantime).</p>
+
+<p>Alright, let’s start with cloning the Jasper repo and then getting it running.
+From your terminal shell:</p>
+
+<pre>
+  git clone https://github.com/biomadeira/jasper.git
+  cd jasper &amp;&amp; bundle exec jekyll serve
+</pre>
+
+<p>Alternatively, you can also fork the repository, then clone your fork and go from there.
+Then go to <code class="highlighter-rouge">localhost:4000/jasper/</code> in your favourite browser and voila - we have
+it running and looking as pretty as it gets. So far, so good:</p>
+
+<p>
+  <img src="http://iampiotr.com/assets/images/jasper_home.jpg" alt="Jasper Blog Home Page" />
+  <small><em>this is what you should be seeing right know</em></small>
+</p>
+
+<p>Fire up the code in your favourite editor and head over to <code class="highlighter-rouge">_config.yml</code>. There are
+some configuration options you might want to change. Most should be self explanatory,
+I’ll leave the setup alone, let’s just change two things:</p>
+
+<pre>
+  <strong><em>_config.yml</em></strong>
+  ...
+  nickname: myname
+  ...
+  base_url: /
+  ...
+</pre>
+
+<p>The latter change will make our site render on the root url, instead of the <code class="highlighter-rouge">/jasper</code> one.
+Regarding nickname, it’s a Jasper convention - we’ll be using this nickname to tag
+ourselves as a post author in just a second.</p>
+
+<h3 id="writing-blog-posts-with-jekyll">Writing Blog Posts with Jekyll</h3>
+
+<p>Alright, our setup should be ready. Let’s write our first post! You might have noticed,
+that our little blog already has a few example posts written. Let’s take a look at one
+of them:</p>
+
+<pre>
+  <strong><em>_posts/1963-08-28-i-have-a-dream.md</em></strong>
+
+  ---
+  layout: post
+  cover: false
+  title: I Have a Dream
+  date:   1963-08-28 10:18:00
+  tags: speeches
+  subclass: 'post tag-speeches'
+  categories: 'casper'
+  navigation: True
+  logo: 'assets/images/ghost.png'
+  cover: 'assets/images/cover4.jpg'
+  ---
+
+  ...
+</pre>
+
+<p>This piece betwee three-dashed lines above is called a YAML front matter.
+All of the values here are optional and most of them are custom setup for Jasper
+theme. You can <a href="https://jekyllrb.com/docs/frontmatter/">read more about the front matter here</a>.
+For now, we’ll steal this setup with some minor changes for the purpose of our new post.</p>
+
+<p>Let’s make ourselves a new file in the <code class="highlighter-rouge">_posts</code> directory. From the command line:</p>
+
+<pre>
+  touch _posts/2017-07-05-an-awesome-post.md
+</pre>
+
+<p>As you probably noticed, we are using the <code class="highlighter-rouge">.md</code> extension for our file.
+That’s right, with Jekyll it’s possible to write our posts using a great, terse
+<a href="https://daringfireball.net/projects/markdown/">Markdown</a> syntax, but you can also
+use the regular HTML if that’s your preference. We’ll stick to Markdown for our
+example post. Let’s set up the contents of our newly created file to:</p>
+
+<pre>
+  <strong><em>_posts/2017-07-05-an-awesome-post.md</em></strong>
+
+  ---
+  layout: post
+  cover: false
+  title: An Awesome Post
+  date: 2017-07-05 12:00:00
+  tags: posts
+  subclass: 'post tag-content'
+  categories: 'myname'
+  navigation: True
+  logo: 'assets/images/ghost.png'
+  cover: 'assets/images/cover3.jpg'
+  ---
+
+  # Hello World!
+
+  This is our awesome post!
+</pre>
+
+<p>The most important piece of the above, is the <code class="highlighter-rouge">categories</code> line, which link your
+post to the author we created before (remember the nickname setting from the <code class="highlighter-rouge">_config.yml</code>?).
+Let’s refresh our homepage at <code class="highlighter-rouge">localhost:4000</code>, and you shall see your new post
+on top of the posts list. Tada!</p>
+
+<p>
+  <img src="http://iampiotr.com/assets/images/jasper_post.jpg" alt="Jasper Blog Home Page" />
+  <small><em>ah, your awesome new Jekyll post is here</em></small>
+</p>
+
+<p>Alright, this should get you going and blogging in no time now! Go read the contents of
+<code class="highlighter-rouge">_posts/2014-09-27-a-full-and-comprehensive-style-test.html</code> for a style guide of
+the Jasper theme, we won’t be going further with that. There is one important thing left
+to do, though: so we have our blog, we can add posts, all that we now need
+is to push to the Internetzz, so that other people can read our precious writings.</p>
+
+<h3 id="github-pages">GitHub Pages</h3>
+
+<p>If you are not familiar with GitHub Pages yet, they provide an extremely convenient
+way of hosting websites, directly from a GitHub repository, with practically zero hassle.
+As it says on <a href="https://pages.github.com/">GitHub pages website</a>:</p>
+
+<blockquote>
+  <p>Just edit, push, and your changes are live.</p>
+</blockquote>
+
+<p>There isn’t really much that can go wrong here, just follow the steps from the link above.
+The only change to the described flow would be, that you don’t clone the newly
+created repository. Instead, connect the previously cloned Jasper repo to your new
+one at github. Let’s quickly commit the changes we have made before and do that:</p>
+
+<pre>
+  git commit -m "Update configuration &amp; create a new blog post"
+  git remote remove origin
+  git remote add origin https://github.com/user/repo.git
+</pre>
+
+<p>Of course, substitute the <code class="highlighter-rouge">user</code> and <code class="highlighter-rouge">repo</code> parts with the data from your
+new GitHub repository. You can confirm that everything worked, by using
+<code class="highlighter-rouge">git remote origin -v</code>.</p>
+
+<p>There is one more gotcha regarding deploying to GitHub Pages with Jasper, which
+gave me quite a headache during setting up my own blog. It was all my fault, though,
+I had simply missed a piece of the <a href="https://github.com/biomadeira/jasper#deployment">gem’s readme regarding deployment</a>,
+so do yourself a favour and don’t repeat my mistakes.</p>
+
+<p>Okay, we did it! You should have your blog live and accessible for all your friends
+and the whole wide world. From here, you can configure it, so that it <a href="https://help.github.com/articles/about-supported-custom-domains/">runs from your
+custom domain of choice</a>
+and do whatever customizations you like. But most importantly, nothing should stop
+you from blogging like crazy right now.</p>
+
+<p>It was a pleasure writing this piece (“A blog about a blog!”), I hope it was also helpful for you.
+If so, don’t hesitate and let me know by writing a comment. Do the same in case of any questions.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>A Full and Comprehensive Style Test</title>
 	  <link>//a-full-and-comprehensive-style-test</link>
 	  <author>Piotr Klosinski</author>
